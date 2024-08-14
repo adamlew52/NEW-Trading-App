@@ -86,8 +86,6 @@ def Showoff(max):
 #
 #        csv_store.write(line_parsed)
 
-
-
 def Tick_List_Collection():
     location = '/Users/adam/Documents/GitHub/NEW-Trading-App/list_of_tickers.txt'
     # Open the file in read mode
@@ -103,9 +101,6 @@ def Tick_List_Collection():
             except Exception as e:
                 # Print a custom message along with the exception
                 print(f"An error occurred: {e}")
-
-
-
 
 
 #def WriteToCSV():
