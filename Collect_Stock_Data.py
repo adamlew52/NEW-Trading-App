@@ -5,8 +5,9 @@ from alpha_vantage.timeseries import TimeSeries
 import time
 
 
-def yFinanceTrial(ticker_symbol): #user-friendly and does not require an API key.
+def yFinanceTrial(): #user-friendly and does not require an API key.
     # Define the ticker symbol
+    ticker_symbol = 'AAPL'
 
     # Get the data
     ticker_data = yf.Ticker(ticker_symbol)
@@ -97,19 +98,16 @@ def Tick_List_Collection():
             # Process the line (e.g., print it)
             #time.sleep(5)
             try: 
-                line_parsed = line.strip() + "\n"
-                print(f"/n/t------------------------------Data for {line_parsed}------------------------------\n\n{yFinanceTrial(line_parsed)}")
+                line_parsed = line.strip()
+                print(f"\n---------------Data for {line_parsed}---------------\n\n{yFinanceTrial()}")
                 #WriteToCSV(line_parsed, "/Users/adam/Documents/GitHub/NEW-Trading-App/Practice_Stock_Data_Storage")
             except Exception as e:
                 # Print a custom message along with the exception
                 print(f"An error occurred: {e}")
 
 
-
-
-
 #def WriteToCSV():
 #    print("writing data to csv..."
-Showoff(100)
+#Showoff(100)
             
-#Tick_List_Collection()
+Tick_List_Collection()
