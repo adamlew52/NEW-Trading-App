@@ -87,8 +87,6 @@ def Showoff(max):
 #
 #        csv_store.write(line_parsed)
 
-
-
 def Tick_List_Collection():
     location = '/Users/adam/Documents/GitHub/NEW-Trading-App/list_of_tickers.txt'
     # Open the file in read mode
