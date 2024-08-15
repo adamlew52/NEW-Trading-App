@@ -2,10 +2,13 @@
 
 
 
-1. download stock data
-2. write it to a csv
+[complete]1. download historical stock data
+[complete]2. write it to a csv                            
 3. allow for gmail message to dicatate what stocks i track
     3a. or, retrieves the historical data and sends it as a csv
+4. actively store minute by minute/second by second data
+    4a. this may require us to utilize a new API or something similar
+5. 
 
 goals
 1. add a webscraper to collect data from
