@@ -152,9 +152,6 @@ def Tick_List_Collection():
                 # Print a custom message along with the exception
                 print(f"An error occurred: {e}")
         #WriteToCSV(f"--------------------------------------\n","/Users/adam/Documents/GitHub/NEW-Trading-App/Practice_Stock_Data_Storage")
-
-
-#Showoff(100)
             
 #Tick_List_Collection()
 def Collect_Hella_Info():
@@ -178,7 +175,7 @@ def Historical_data(ticker_symbol):
     # Get historical market data
     #ticker_df = ticker_data.history(period='1mo', start='2023-07-01', end='2024-08-01')
 
-    ticker = ticker_data.history(period="1d", interval="1m", auto_adjust=False)
+    ticker = ticker_data.history(period="5d", interval="1m", auto_adjust=False)
 
     line_parsed = ticker
     try: 
@@ -186,11 +183,8 @@ def Historical_data(ticker_symbol):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-
-    #print(type(line_parsed))
-
     Write_Historical_DataFrame_to_CSV(line_parsed, file_loc)
 
-Tick_List_Collection()
+Tick_List_Collection() # 5 days worth of minute by minute data
 #Collect_Hella_Info()
 #Historical_data("TSLA")

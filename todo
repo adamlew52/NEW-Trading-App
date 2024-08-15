@@ -8,7 +8,8 @@
     3a. or, retrieves the historical data and sends it as a csv
 4. actively store minute by minute/second by second data
     4a. this may require us to utilize a new API or something similar
-5. 
+5. collect more data
+    5a. collect all data possible, make it readable: ['1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max']
 
 goals
 1. add a webscraper to collect data from
