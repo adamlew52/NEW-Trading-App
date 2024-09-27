@@ -7,6 +7,7 @@ from googlesearch import search
 import requests
 import time
 from datetime import datetime
+from newspaper.article import ArticleException
 
 def load_wordlist(file_path):
     """Loads a word list from a given text file."""
@@ -24,11 +25,20 @@ def fetch_article_content(url):
         if e.response.status_code == 429:  # Too Many Requests
             print(f"CAPTCHA or too many requests error for {url}. Opening in browser.")
             webbrowser.open(url)  # Open the link in the default web browser
-            time.sleep(3600)  # Wait for 1 hour before retrying (as noted in google's api documentation)
+            time.sleep(3600)  # Wait for 1 hour before retrying
             return fetch_article_content(url)  # Retry fetching the article
+        elif e.response.status_code == 403:  # Forbidden
+            print(f"Access denied for {url}. Skipping this URL.")
+            return None
+        elif e.response.status_code == 401:  # Unauthorized
+            print(f"Authorization required for {url}. Skipping this URL.")
+            return None
         else:
             print(f"Error fetching article from {url}: {e}")
             return None
+    except ArticleException as e:
+        print(f"Failed to download the article from {url}: {e}")
+        return None
 
 def count_word_frequencies(article_text, word_list):
     """Counts word frequencies in the article text."""
@@ -62,17 +72,22 @@ def process_articles(urls, positive_word_list, negative_word_list):
 
             normalized_data.append(normalized_value)
 
+        time.sleep(1)  # Sleep 1 second between article fetches to avoid rate limiting
+
     return normalized_data
 
 def find_articles(keyword, date, num_results=10):
     """Searches for articles containing the specified keyword and published on a specific date."""
     formatted_date = datetime.strptime(date, "%Y-%m-%d").strftime("%B %d, %Y")
-    keywordAdditions = [f"{keyword} financial articles published on {formatted_date}",
-                        f"{keyword} recent changes published on {formatted_date}",
-                        f"{keyword} predictions published on {formatted_date}"]
+    keywordAdditions = [
+        f"{keyword} financial articles published on {formatted_date}",
+        f"{keyword} recent changes published on {formatted_date}",
+        f"{keyword} predictions published on {formatted_date}"
+    ]
+    
     search_results = []
     
-    time.sleep(0.25) # just to keep google off da back
+    time.sleep(0.25)  # Just to keep Google off da back
 
     for search_query in keywordAdditions:
         print(f"Searching for articles containing: '{search_query}'")
@@ -114,5 +129,5 @@ def article_processor_function(list_of_tickers, date):
 
 # Example usage
 list_of_tickers = get_tickers_from_file('/Users/adam/Documents/GitHub/NEW-Trading-App/list_of_tickers.txt')
-specific_date = "2024-01-01"
+specific_date = "2024-09-27"
 article_processor_function(list_of_tickers, specific_date)
