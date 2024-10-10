@@ -1,0 +1,364 @@
+https://www.moomoo.com/news/post/44017332/tesla-options-spot-on-on-september-27th-2-39-million: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://www.trefis.com/stock/tsla/articles/558891/what-musks-gamble-on-trump-means-for-tesla-stock/2024-09-27: 
+	pos:52
+	neg:23
+----------------------------------------------------------------------
+https://fortune.com/2024/09/27/musk-tesla-56-billion-compensation/: 
+	pos:54
+	neg:15
+----------------------------------------------------------------------
+https://www.nasdaq.com/articles/should-you-buy-or-sell-tesla-stock-its-biggest-event-years: 
+	pos:8
+	neg:11
+----------------------------------------------------------------------
+https://www.teslaoracle.com/2024/10/03/tesla-tsla-vehicle-deliveries-grew-4-in-q3-2024-compared-to-the-last-quarter-6-yoy/: 
+	pos:8
+	neg:4
+----------------------------------------------------------------------
+https://www.investopedia.com/dow-jones-today-09272024-8719401: 
+	pos:17
+	neg:7
+----------------------------------------------------------------------
+https://www.reddit.com/r/TSLALounge/comments/1f9boi3/tsla_daily_thread_september_05_2024/: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://www.investopedia.com/dow-jones-today-09272024-8719401: 
+	pos:17
+	neg:7
+----------------------------------------------------------------------
+https://www.nasdaq.com/articles/openai-just-gave-spectacular-news-nvidia-stock-investors: 
+	pos:9
+	neg:11
+----------------------------------------------------------------------
+https://www.cnbc.com/2024/09/27/all-time-highs-be-damned-its-still-nvidias-market-.html: 
+	pos:15
+	neg:5
+----------------------------------------------------------------------
+https://finance.yahoo.com/news/nvidia-corporation-nvda-continued-rally-124502192.html: 
+	pos:20
+	neg:8
+----------------------------------------------------------------------
+https://www.nasdaq.com/articles/pre-market-most-active-sep-27-2024-nio-nvda-ionq-sqqq-tsll-shv-jd-baba-pdd-xpev-tal-beke: 
+	pos:6
+	neg:1
+----------------------------------------------------------------------
+https://finance.yahoo.com/news/top-analyst-reports-nvidia-american-201200661.html: 
+	pos:82
+	neg:36
+----------------------------------------------------------------------
+https://www.investopedia.com/nvidia-stock-volatility-ai-chipmakers-8718884: 
+	pos:10
+	neg:6
+----------------------------------------------------------------------
+https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2025: 
+	pos:33
+	neg:32
+----------------------------------------------------------------------
+https://www.cnbc.com/2024/09/26/stock-market-today-live-updates.html: 
+	pos:16
+	neg:9
+----------------------------------------------------------------------
+https://investor.nvidia.com/financial-info/sec-filings/default.aspx: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://finance.yahoo.com/news/why-apple-aapl-rose-end-124019641.html: 
+	pos:18
+	neg:6
+----------------------------------------------------------------------
+https://www.investopedia.com/dow-jones-today-09272024-8719401: 
+	pos:17
+	neg:7
+----------------------------------------------------------------------
+https://www.nasdaq.com/articles/after-hours-most-active-sep-27-2024-vale-ggb-cig-intc-nvda-bbd-gehc-sid-aapl-csco-bac-infn: 
+	pos:6
+	neg:0
+----------------------------------------------------------------------
+https://www.investopedia.com/apple-shares-lose-ground-as-barclays-warns-of-softening-iphone-16-demand-8721229: 
+	pos:5
+	neg:3
+----------------------------------------------------------------------
+https://www.nasdaq.com/articles/validea-detailed-fundamental-analysis-aapl-25: 
+	pos:12
+	neg:11
+----------------------------------------------------------------------
+https://www.cnbc.com/2024/09/26/stock-market-today-live-updates.html: 
+	pos:16
+	neg:9
+----------------------------------------------------------------------
+https://finance.yahoo.com/news/analyst-apple-aapl-iphone-16-131636745.html: 
+	pos:30
+	neg:14
+----------------------------------------------------------------------
+https://investor.apple.com/sec-filings/default.aspx: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://www.zacks.com/stock/news/2342535/stock-market-news-for-sep-27-2024: 
+	pos:8
+	neg:4
+----------------------------------------------------------------------
+https://www.nasdaq.com/articles/why-market-dipped-lucid-group-lcid-gained-today: 
+	pos:28
+	neg:3
+----------------------------------------------------------------------
+https://finance.yahoo.com/quote/LCID/: 
+	pos:9
+	neg:2
+----------------------------------------------------------------------
+https://www.zacks.com/stock/news/2343023/why-the-market-dipped-but-lucid-group-lcid-gained-today: 
+	pos:8
+	neg:4
+----------------------------------------------------------------------
+https://www.cnbc.com/2024/09/26/stock-market-today-live-updates.html: 
+	pos:16
+	neg:9
+----------------------------------------------------------------------
+https://ir.lucidmotors.com/news-releases/news-release-details/lucid-announces-second-quarter-2024-financial-results: 
+	pos:178
+	neg:80
+----------------------------------------------------------------------
+https://www.marketbeat.com/instant-alerts/nasdaq-lcid-percent-decline-2024-10-03/: 
+	pos:36
+	neg:7
+----------------------------------------------------------------------
+https://www.marketscreener.com/quote/stock/LUCID-GROUP-INC-112589428/calendar/: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://www.phmloans.com/blog-article/market-update---september-27-2024: 
+	pos:19
+	neg:5
+----------------------------------------------------------------------
+https://www.dfs.ny.gov/reports-and-publications/weekly-bulletins/wb20240927: 
+	pos:26
+	neg:6
+----------------------------------------------------------------------
+https://mcalvany.com/mwm/credit-bubble-bulletin/credit-bubble-weekly/september-27-2024-neutral-rates-and-xis-whatever-it-takes/: 
+	pos:271
+	neg:342
+----------------------------------------------------------------------
+https://research-center.amundi.com/article/global-investment-views-september-2024: 
+	pos:12
+	neg:6
+----------------------------------------------------------------------
+https://www.amazon.com/Investing-U-S-Financial-History-Understanding/dp/B0CDJGG9RG: 
+	pos:1
+	neg:1
+----------------------------------------------------------------------
+https://www.investopedia.com/dow-jones-today-09132024-8711980: 
+	pos:21
+	neg:9
+----------------------------------------------------------------------
+https://www.conference-board.org/topics/consumer-confidence: 
+	pos:44
+	neg:27
+----------------------------------------------------------------------
+https://www.both.org/?m=20240927: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://www.insidermonkey.com/blog/rivian-automotive-inc-rivn-among-the-stocks-with-biggest-upside-potential-according-to-hedge-funds-1370075/?amp=1: 
+	pos:54
+	neg:19
+----------------------------------------------------------------------
+https://finance.yahoo.com/news/rivian-automotive-inc-rivn-worst-143409881.html: 
+	pos:52
+	neg:35
+----------------------------------------------------------------------
+https://www.timothysykes.com/news/rivian-automotive-inc-rivn-news-2024_09_27-3/: 
+	pos:61
+	neg:26
+----------------------------------------------------------------------
+https://www.moomoo.com/news/post/44017383/rivian-automotive-options-spot-on-on-september-27th-170-03k: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://www.timothysykes.com/news/rivian-automotive-inc-rivn-news-2024_09_27-2/: 
+	pos:68
+	neg:33
+----------------------------------------------------------------------
+https://247wallst.com/investing/2024/10/09/rivian-price-prediction-and-forecast/: 
+	pos:48
+	neg:21
+----------------------------------------------------------------------
+https://finance.yahoo.com/news/street-analysts-bullish-rivian-automotive-091943598.html: 
+	pos:60
+	neg:22
+----------------------------------------------------------------------
+https://rivian.com/newsroom/article/rivian-releases-q3-2024-production-and-delivery-figures: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://electrek.co/2024/10/04/rivian-rivn-cuts-ev-production-plans-q3-deliveries-fall/: 
+	pos:6
+	neg:7
+----------------------------------------------------------------------
+https://www.investopedia.com/oppenheimer-downgrades-microsoft-stock-artificial-intelligence-openai-8724857: 
+	pos:5
+	neg:4
+----------------------------------------------------------------------
+https://www.investopedia.com/dow-jones-today-09272024-8719401: 
+	pos:17
+	neg:7
+----------------------------------------------------------------------
+https://www.nasdaq.com/articles/company-news-sep-27-2024: 
+	pos:14
+	neg:3
+----------------------------------------------------------------------
+https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-finance/planned-features: 
+	pos:4
+	neg:1
+----------------------------------------------------------------------
+https://mcalvany.com/mwm/credit-bubble-bulletin/credit-bubble-weekly/september-27-2024-neutral-rates-and-xis-whatever-it-takes/: 
+	pos:271
+	neg:342
+----------------------------------------------------------------------
+https://pittand.com/2024/10/09/september-2024-market-recap/: 
+	pos:39
+	neg:36
+----------------------------------------------------------------------
+https://www.microsoft.com/en-us/investor/events/fy-2024/earnings-fy-2024-q1: 
+	pos:355
+	neg:95
+----------------------------------------------------------------------
+https://finance.yahoo.com/news/microsoft-corporation-msft-why-billionaires-071628837.html: 
+	pos:53
+	neg:19
+----------------------------------------------------------------------
+https://finance.yahoo.com/quote/MSFT/: 
+	pos:17
+	neg:1
+----------------------------------------------------------------------
+https://cloud.google.com/blog/products/databases/google-cloud-database-news-for-september-2024: 
+	pos:15
+	neg:16
+----------------------------------------------------------------------
+https://www.theglobeandmail.com/investing/markets/inside-the-market/article-fridays-analyst-upgrades-and-downgrades-for-september-27/: 
+	pos:150
+	neg:56
+----------------------------------------------------------------------
+https://www.investopedia.com/dow-jones-today-09272024-8719401: 
+	pos:17
+	neg:7
+----------------------------------------------------------------------
+https://www.linkedin.com/pulse/united-states-stock-market-week-ending-september-27-2024-paul-young-hztoc: 
+	pos:18
+	neg:6
+----------------------------------------------------------------------
+https://support.google.com/adspolicy/answer/15205292?hl=en: 
+	pos:3
+	neg:2
+----------------------------------------------------------------------
+https://www.cnbc.com/2024/09/26/stock-market-today-live-updates.html: 
+	pos:16
+	neg:9
+----------------------------------------------------------------------
+https://www.openmarketsinstitute.org/publications/the-corner-newsletter-september-2024-intel: 
+	pos:23
+	neg:24
+----------------------------------------------------------------------
+https://www.sec.gov/newsroom/press-releases: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://finance.yahoo.com/news/advanced-micro-devices-amd-stock-134754000.html: 
+	pos:32
+	neg:12
+----------------------------------------------------------------------
+https://www.investopedia.com/dow-jones-today-09272024-8719401: 
+	pos:17
+	neg:7
+----------------------------------------------------------------------
+https://ir.amd.com/: 
+	pos:6
+	neg:0
+----------------------------------------------------------------------
+https://www.cnbc.com/2024/09/26/stock-market-today-live-updates.html: 
+	pos:16
+	neg:9
+----------------------------------------------------------------------
+https://www.sec.gov/newsroom/press-releases: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://www.spglobal.com/ratings/en/research/articles/240927-banking-industry-country-risk-assessment-update-september-2024-13269833: 
+	pos:78
+	neg:97
+----------------------------------------------------------------------
+https://www.imf.org/en/Publications/WP/Issues/2024/09/27/Committing-to-Grow-The-Full-Impact-of-WTO-Accessions-555696: 
+	pos:9
+	neg:0
+----------------------------------------------------------------------
+https://ir.amd.com/news-events/press-releases/detail/1209/amd-reports-second-quarter-2024-financial-results: 
+	pos:93
+	neg:71
+----------------------------------------------------------------------
+https://natlawreview.com/article/weekly-irs-roundup-september-23-september-27-2024: 
+	pos:9
+	neg:2
+----------------------------------------------------------------------
+https://www.nytimes.com/2024/09/27/technology/openai-chatgpt-investors-funding.html: 
+	pos:4
+	neg:3
+----------------------------------------------------------------------
+https://www.computing.co.uk/news/2024/meta-banks-deal-to-fight-scammers: 
+	pos:18
+	neg:31
+----------------------------------------------------------------------
+https://www.investopedia.com/dow-jones-today-09272024-8719401: 
+	pos:17
+	neg:7
+----------------------------------------------------------------------
+https://investor.fb.com/investor-news/press-release-details/2024/Meta-Reports-First-Quarter-2024-Results/default.aspx: 
+	pos:50
+	neg:29
+----------------------------------------------------------------------
+https://www.eqs-news.com/news/afr/meta-wolf-ag-preliminary-announcement-of-the-publication-of-financial-reports-according-to-articles-114-115-117-of-the-wphg-the-german-securities-act/2137737: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://www.nasdaq.com/articles/validea-detailed-fundamental-analysis-meta-68: 
+	pos:12
+	neg:3
+----------------------------------------------------------------------
+https://finance.yahoo.com/news/meta-platforms-inc-meta-unveils-183954278.html: 
+	pos:33
+	neg:11
+----------------------------------------------------------------------
+https://thefinancialbrand.com/news/bank-marketing/9-critical-leadership-lessons-from-top-meta-marketing-exec-181646/: 
+	pos:66
+	neg:20
+----------------------------------------------------------------------
+https://www.nasdaq.com/articles/colin-sebastian-weighs-meta-stock-following-meta-connect-conference: 
+	pos:25
+	neg:0
+----------------------------------------------------------------------
+https://www.moomoo.com/news/post/44017484/amc-entertainment-options-spot-on-on-september-27th-96287-contracts: 
+	pos:0
+	neg:0
+----------------------------------------------------------------------
+https://www.investing.com/news/company-news/wall-street-swot-amc-stock-faces-uphill-battle-amid-debt-and-valuation-concerns-93CH-3636458: 
+	pos:92
+	neg:45
+----------------------------------------------------------------------
+https://variety.com/2024/film/news/amc-theatres-adam-aron-optimistic-upgrades-1236157370/: 
+	pos:20
+	neg:13
+----------------------------------------------------------------------
+https://www.nasdaq.com/articles/amc-entertainment-amc-sees-more-significant-dip-broader-market-some-facts-know: 
+	pos:23
+	neg:7
+----------------------------------------------------------------------
+https://m-dobgift.giftlegacy.com/?pageID=32&docID=1185: 
+	pos:30
+	neg:17
+----------------------------------------------------------------------
+https://www.zacks.com/stock/news/2339044/heres-why-investors-should-retain-amc-entertainment-stock-now: 
+	pos:8
+	neg:4
+----------------------------------------------------------------------

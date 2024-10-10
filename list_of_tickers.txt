@@ -13,3 +13,12 @@ DIS
 WMT
 NFLX
 KO
+XOM
+CVX
+NegativeCOP
+SLB
+DUK
+BP
+ENB
+TTE
+D

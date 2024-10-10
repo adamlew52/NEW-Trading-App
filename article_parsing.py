@@ -6,8 +6,11 @@ import re
 from googlesearch import search
 import requests
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from newspaper.article import ArticleException
+
+num_results_DESIGNATOR = 1
+
 
 def load_wordlist(file_path):
     """Loads a word list from a given text file."""
@@ -24,6 +27,7 @@ def fetch_article_content(url):
     except requests.exceptions.HTTPError as e:
         if e.response.status_code == 429:  # Too Many Requests
             print(f"CAPTCHA or too many requests error for {url}. Opening in browser.")
+            print(webbrowser.get())
             webbrowser.open(url)  # Open the link in the default web browser
             time.sleep(3600)  # Wait for 1 hour before retrying
             return fetch_article_content(url)  # Retry fetching the article
@@ -72,12 +76,17 @@ def process_articles(urls, positive_word_list, negative_word_list):
 
             normalized_data.append(normalized_value)
 
+            with open(f"/Users/adam/Documents/GitHub/NEW-Trading-App/article_word_frequencies.txt", 'a') as a:
+                a.write(f"{url}: \n\tpos:{pos_count}\n\tneg:{neg_count}\n")
+                a.write("----------------------------------------------------------------------\n")
+
         time.sleep(1)  # Sleep 1 second between article fetches to avoid rate limiting
 
     return normalized_data
 
-def find_articles(keyword, date, num_results=10):
+def find_articles(keyword, date, num_results_DESIGNATOR): #CHANGEME--------------------------------------------------------------------
     """Searches for articles containing the specified keyword and published on a specific date."""
+    num_results = num_results_DESIGNATOR
     formatted_date = datetime.strptime(date, "%Y-%m-%d").strftime("%B %d, %Y")
     keywordAdditions = [
         f"{keyword} financial articles published on {formatted_date}",
@@ -87,7 +96,7 @@ def find_articles(keyword, date, num_results=10):
     
     search_results = []
     
-    time.sleep(0.25)  # Just to keep Google off da back
+    time.sleep(0.5)  # Just to keep Google off da back
 
     for search_query in keywordAdditions:
         print(f"Searching for articles containing: '{search_query}'")
@@ -116,18 +125,100 @@ def article_processor_function(list_of_tickers, date):
     positive_word_list = load_wordlist('/Users/adam/Documents/GitHub/NEW-Trading-App/Keywords/Positive.txt')
     
     all_normalized_data = {}
-    
+    daily_scores = []  # To store the overall scores for the day
+
     for ticker in list_of_tickers:
         create_directory(ticker)
         print(f"Processing articles for ticker: {ticker}")
-        urls = find_articles(ticker, date)
+        urls = find_articles(ticker, date, num_results_DESIGNATOR)
         normalized_data = process_articles(urls, positive_word_list, negative_word_list)
-        all_normalized_data[ticker] = normalized_data
+        
+        # Calculate the average normalized score for the day
+        average_score = sum(normalized_data) / len(normalized_data) if normalized_data else 0
+        daily_scores.append(average_score)  # Add to daily scores
 
-        with open(f'/Users/adam/Documents/GitHub/NEW-Trading-App/article_word_frequency_data/{ticker}/normalized_article_data_{date}.txt', 'w') as f:
-            f.write(f"{ticker}: {normalized_data}\n")
+        # Prepend the average score to the normalized data
+        normalized_data_with_average = [average_score] + normalized_data
+        
+        all_normalized_data[ticker] = normalized_data_with_average  # Store with average as first entry
 
-# Example usage
+        # Write the ticker's data to file
+        with open(f'/Users/adam/Documents/GitHub/NEW-Trading-App/article_word_frequency_data/{ticker}/normalized_article_data_{date}.txt', 'a') as f:
+            f.write(f"{ticker}\t|{date}\t: {normalized_data_with_average}\n")
+    
+    # Print the overall average score for the day across all tickers
+    overall_average_score = sum(daily_scores) / len(daily_scores) if daily_scores else 0
+    print(f"Overall average score for {date}: {overall_average_score}")
+
+
+def iterate_date(current_date):
+    # Split the date into day, month, year
+    result = re.split(r'[_-]', current_date)
+    day = int(result[2])
+    month = int(result[1])
+    year = int(result[0])
+    
+    # Number of days in each month (index 1 = January, index 12 = December)
+    days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    
+    # Check if it's a leap year
+    def is_leap_year(year):
+        return (year % 4 == 0 and (year % 100 != 0 or year % 400 == 0))
+
+    # Adjust for leap years
+    if is_leap_year(year):
+        days_in_month[1] = 29  # February has 29 days in leap years
+    
+    # Increment the day
+    if day < days_in_month[month - 1]:
+        day += 1
+    else:
+        day = 1
+        # Increment the month
+        if month < 12:
+            month += 1
+        else:
+            month = 1
+            year += 1
+    
+    # Format the new date as YYYY-MM-DD
+    new_date = f"{year:04d}-{month:02d}-{day:02d}"
+    
+    return new_date
+
+# Function to iterate from start_date to today
+def iterate_until_today(start_date):
+    current_date = start_date
+    today = datetime.today().strftime('%Y-%m-%d')  # Today's date in YYYY-MM-DD format
+    
+    # Store each date
+    dates = []
+    
+    # Loop until current_date reaches today
+    while current_date != today:
+        dates.append(current_date)  # Save the current date
+        current_date = iterate_date(current_date)  # Increment the date
+        with open("/Users/adam/Documents/GitHub/NEW-Trading-App/tracking_date_iteration.txt", 'a') as date_track:
+            date_track.write(f"{current_date}\n")
+    
+    dates.append(today)  # Add today's date
+    return dates
+
+
+# Example usage:
+# Load tickers from the file
 list_of_tickers = get_tickers_from_file('/Users/adam/Documents/GitHub/NEW-Trading-App/list_of_tickers.txt')
-specific_date = "2024-09-27"
-article_processor_function(list_of_tickers, specific_date)
+
+# Set the start date for the iteration
+start_date = "2001-01-01"
+
+# Get all dates from start_date until today
+all_dates = iterate_until_today(start_date)
+
+# Iterate over each date and process the articles
+for date in all_dates:
+    article_processor_function(list_of_tickers, date)  # Process articles for each date
+    print(f"Processing stuff for: {date}")
+    
+    # Add a delay to prevent too many requests (adjust as needed)
+    time.sleep(2)  # 2-second delay between requests
