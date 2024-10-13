@@ -204,7 +204,6 @@ def iterate_until_today(start_date):
     dates.append(today)  # Add today's date
     return dates
 
-
 # Example usage:
 # Load tickers from the file
 list_of_tickers = get_tickers_from_file('/Users/adam/Documents/GitHub/NEW-Trading-App/list_of_tickers.txt')
