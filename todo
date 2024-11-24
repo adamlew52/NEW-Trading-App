@@ -4,18 +4,21 @@
 
 [complete]1. download historical stock data
 [complete]2. write it to a csv                            
-3. allow for gmail message to dicatate what stocks i track
+[complete] 3. allow for gmail message to dicatate what stocks i track
     3a. or, retrieves the historical data and sends it as a csv
 4. actively store minute by minute/second by second data
     4a. this may require us to utilize a new API or something similar
-5. collect more data
+[complete]5. collect more data
     5a. collect all data possible, make it readable: ['1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max']
 
-goals
-1. add a webscraper to collect data from
-    1a. blogs
-    1b. new outlets
-    1c. 
-    1d. 
-    1e. 
-    1f. 
+
+
+[complete] 1. finish normalizing all the article data, every single article should be ranked between -1,1
+2. sum the normalzied article data to decide if a day indicated -1 or 1 change
+    - before this, we need to make something that checks the article for the date
+    - create csv or similar dataset that has x as the date and the y as the average article biases
+        - each ticker should get its own csv hosting DATE (m) x NORMALIZED ARTICLE DATA (n)
+
+[complete]3. pull actual stock data from that day, normalize to -1, 1
+4. compare the two and see what the difference is
+5. use 
